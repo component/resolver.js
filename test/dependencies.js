@@ -114,6 +114,16 @@ describe('Dependencies', function () {
     hgp.dependencies['component/classes'].should.be.ok
   }))
 
+  it('should work with component/levenshtein', co(function* () {
+    var tree = yield* resolve({
+      dependencies: {
+        'component/levenshtein': '*'
+      }
+    })
+
+    tree.dependencies['component/levenshtein'].should.be.ok
+  }))
+
   it('should work with ianstormtaylor/router', co(function* () {
     var tree = yield* resolve({
       dependencies: {
