@@ -63,6 +63,7 @@ The main `options` are:
     - `semver: 1`
     - `installs: 5`
     - `downloads: 1`
+- `proxy` - specify a proxy to use, or try to fallback to the environments https_proxy.
 
 Options passed to `component-downloader`:
 
